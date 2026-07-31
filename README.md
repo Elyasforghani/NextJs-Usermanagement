@@ -102,7 +102,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📸 Screenshots
 
-> *Add screenshots here*
+> <img width="1904" height="917" alt="Image" src="https://github.com/user-attachments/assets/a495626b-6a10-4f2f-b3d5-11d1fdf2ff19" />
+
+> <img width="1919" height="918" alt="Image" src="https://github.com/user-attachments/assets/d92f2003-131d-4509-b250-f7558a028edb" />
 
 ---
 
