@@ -1,0 +1,44 @@
+'use client'
+import { Box, Button, TextField } from '@mui/material'
+import React, { useState } from 'react'
+
+export default function page() {
+  const [inp,setInp]=useState('')
+  return (
+    <div>
+      <Box component="container"
+      sx={{
+        // Layout & Sizing
+        width: '100%',
+        maxWidth: 480, // Restricts max width on large screens
+        mx: 'auto',    // Centers the form horizontally
+        my: 4,         // Top/bottom margin
+
+        // Flexbox spacing for internal form elements
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 2.5,       // Space between input fields (20px)
+
+        // Visual Styling
+        p: { xs: 2.5, sm: 4 }, // 20px padding on mobile, 32px on tablet/desktop
+        borderRadius: 3,      // Smooth rounded corners
+        bgcolor: 'background.paper',
+        boxShadow: (theme) => theme.shadows[3], // Mild depth
+        border: '1px solid',
+        borderColor: 'divider',
+      }} > 
+
+       <TextField id="outlined-basic" label="Outlined" variant="outlined" value={inp} onChange={(e)=>setInp(e.target.value)} />
+
+       <Button variant="contained">send</Button>
+
+02138582314 
+
+
+
+
+
+      </Box>
+    </div>
+  )
+}
