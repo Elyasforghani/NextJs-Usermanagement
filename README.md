@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# User Management App
 
-## Getting Started
+A modern, visually stunning user management application built with **Next.js**, **Material UI**, **Framer Motion**, and **Three.js**. Features a dark glassmorphism UI with animated 3D background effects.
 
-First, run the development server:
+🔗 **Live Demo:** [https://next-js-usermanagement-dtaa.vercel.app/](https://next-js-usermanagement-dtaa.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔍 **Live Search** | Search users by first name with real-time filtering |
+| ➕ **Add Users** | Add new users via a clean form with validation |
+| 🌌 **3D Background** | Animated starfield and floating particles using Three.js |
+| 🎨 **Glassmorphism UI** | Frosted glass cards with cyan glow borders |
+| ✨ **Framer Motion** | Smooth stagger animations and hover effects |
+| 📱 **Responsive Design** | Fully responsive across all screen sizes |
+| 🔗 **Social Links** | Interactive footer with GitHub, LinkedIn, and Email |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) + [Material UI v6](https://mui.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **3D Graphics:** [Three.js](https://threejs.org/) + [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) + [@react-three/drei](https://github.com/pmndrs/drei)
+- **Icons:** [Material Icons](https://mui.com/material-ui/material-icons/)
+- **API:** [MockAPI](https://mockapi.io/) (RESTful backend)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## 📁 Project Structure
+
+```
+my-app/
+├── app/
+│   ├── components/
+│   │   ├── Footer.jsx          # Animated footer with social links
+│   │   ├── FriendSearch.jsx    # Search component with live filtering
+│   │   └── ThreeJsBackground.jsx # 3D starfield background
+│   ├── globals.css             # Tailwind v4 + custom styles
+│   ├── layout.jsx              # Root layout with header
+│   └── page.jsx                # Main page with form + search
+├── public/
+│   └── profile.jpg             # Avatar image
+├── package.json
+└── next.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Node.js 18+ and npm
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Clone the repository
+git clone https://github.com/Elyasforghani/nextjs-usermanagement.git
+cd nextjs-usermanagement/my-app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Run the development server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎨 Design System
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| **Background** | `#0a0f1a` | Page background |
+| **Card BG** | `rgba(15, 23, 42, 0.7)` | Glassmorphism cards |
+| **Primary** | `#38bdf8` | Cyan accent, borders, glows |
+| **Secondary** | `#f87171` | Red accent, hearts, errors |
+| **Text** | `#e2e8f0` | Primary text |
+| **Muted** | `rgba(148, 163, 184, 0.8)` | Secondary text |
+| **Border** | `rgba(56, 189, 248, 0.15)` | Subtle cyan borders |
+
+---
+
+## 🔌 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `https://6a3459d98248ee962fa55807.mockapi.io/project` | Fetch all users |
+| `GET` | `?Firstname={query}` | Search users by name |
+| `POST` | `/project` | Add new user |
+
+---
+
+## 📸 Screenshots
+
+> *Add screenshots here*
+
+---
+
+## 🧑‍💻 Author
+
+**Elyas Forghani**
+
+- 🐙 [GitHub](https://github.com/Elyasforghani)
+- 💼 [LinkedIn](https://www.linkedin.com/in/alireza-forghani-b4746b263/)
+- 📧 [Email](mailto:elyasfgidev@example.com)
+- 📧 [website](https://www.elyasforghani.com/)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Built with ❤️ by Elyas Forghani
+</p>
